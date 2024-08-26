@@ -1,0 +1,213 @@
+.topButton {
+    position: fixed;
+    display: block;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+.header {
+    text-align: center;
+    background-color: seagreen;
+}
+.heroSpace {
+    background-image: url("https://i.imgur.com/kpEtI9T.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100vh;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.heroSpace h1 {
+    font-size: 9vmax;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    text-shadow: -15px 5px 20px #ced0d3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #F9f1cc;
+    text-shadow: 5px 5px 0px #FFB650, 
+      10px 10px 0px #FFD662, 
+      15px 15px 0px  #FF80BF, 
+      20px 20px 0px #EF5097, 
+      25px 25px 0px #6868AC, 
+      30px 30px 0px #90B1E0;
+}
+.heroSpace span {
+    font-size: 11vmax;
+    display: block;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    display: block;
+    unicode-bidi: isolate;
+}
+.aboutEvent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.aboutEvent video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the video covers the entire div */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Places the video behind the content */
+}
+
+.infoCollector {
+    position: relative;
+    color: white;
+    padding-bottom: 100%;
+    background: rgb(0,0,0);
+    text-align: left;
+}
+.aboutChoice {
+    text-align: -webkit-right;
+    padding-top: 10%;
+}
+.aboutChoice p {
+    padding: 30px;
+    font-size: 6vmax;
+    border: 20px solid white;
+    width: 50%;
+    color: white;
+    backdrop-filter: blur(10px) saturate(70%);
+}
+.aboutChoice p:hover {
+    cursor: pointer;
+}
+.infoCollector p {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.schedule {
+    padding: 20px;
+    padding-left: 10%; /* Adjust for consistency */
+    padding-right: 10%; /* Adjust for consistency */
+    padding-top: 2%;
+    background-color: aliceblue;
+    margin: 0; /* Remove margin between sections */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+.event {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+}
+
+.time {
+    font-weight: bold;
+    color: #555;
+}
+
+.description {
+    color: #777;
+}
+.section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+.section.visible {
+    opacity: 1;
+}
+.contactWrap {
+    background-image: url("https://i.imgur.com/kpEtI9T.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100vh;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #4cae4c;
+}
+
+@media (max-width: 768px) {
+    .aboutChoice p {
+        display: inline;
+    }
+    .aboutChoice {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}
