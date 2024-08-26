@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
 .topButton {
     position: fixed;
     display: block;
@@ -20,26 +22,19 @@
     padding-left: 10%;
 }
 .heroSpace h1 {
-    font-size: 9vmax;
-    font-family: "Matemasie", sans-serif;
-    font-weight: 700;
-    position: absolute;
-    text-shadow: -15px 5px 20px #ced0d3;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #F9f1cc;
-    text-shadow: 5px 5px 0px #FFB650, 
-      10px 10px 0px #FFD662, 
-      15px 15px 0px  #FF80BF, 
-      20px 20px 0px #EF5097, 
-      25px 25px 0px #6868AC, 
-      30px 30px 0px #90B1E0;
+    font-family: 'Lobster Two', serif; /* Stylish, retro font */
+    font-size: 9vw; /* Responsive font size */
+    position: relative; /* Enables use of z-index */
+    color: #F9f1cc; /* Primary color of the text */
+    text-shadow: -2px 2px 0 #FFB650, /* Orange shadow */
+                 -4px 4px 0 #FF80BF, /* Pink shadow */
+                 -6px 6px 0 #6868AC; /* Dark blue shadow */
+    transform: skewX(-10deg); /* Skew the text on the X-axis */
+    transition: all 0.5s ease; /* Smooth transition for hover effects */
+    z-index: 2;
 }
 .heroSpace span {
-    font-size: 11vmax;
+    font-size: 13vmax;
     display: block;
 }
 .section {
